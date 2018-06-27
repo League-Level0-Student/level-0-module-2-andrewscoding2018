@@ -5,15 +5,18 @@ package random;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class IntroToRandom {
 	public static void main(String[] args) {
 		
-		int r = 0;
+		//int r = 0;
 		
 		//3. Now make r random. 
 		//   Create an object of the Random class
 		//	 use .nextInt() to get a random number
-		
+		Random rand = new Random();
+		int r = rand.nextInt((222-88)+1) -222;
 
 		//4. Limit the random number between 0 and 100
 
@@ -22,7 +25,7 @@ public class IntroToRandom {
 		//6. Challenge: Limit the random number between -222 and 88
 
 		//1. Print out the value of r
-		
+		JOptionPane.showMessageDialog(null, r);
 		//2. Run the program.  What number appears in the console?
 		//   Run it again. Is the number the same?
 	}
